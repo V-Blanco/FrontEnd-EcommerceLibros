@@ -1,0 +1,235 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%; /*ajusta el tamaño base de la fuente, 1rem=10px */
+}
+
+body {
+  font-family: "Saira Condensed", sans-serif;
+  font-size: 1.6rem;
+  background: #517a7a;
+  color: #ffffff;
+
+  display: flex;
+  flex-direction: column;
+  height: 100vh; /*que se adpate al tamaño de la pantalla <- vh=viewport*/
+
+  /*background: linear-gradient(135deg, #5f8f8f, #3a6b6b);*/
+}
+
+main {
+  width: 80%;
+  margin: auto; /*distribuye el resto del widht. (sobra 20%, auto-> 10% a cada lado*/
+  padding-bottom: 2rem; /*para que se separe un poco del footer*/
+  flex: 1; /*que el main sea lo que ocupa mas espacio, "prioridad 1" */
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.btn {
+  background-color: #ffc83d;
+  border: none;
+  font-size: 1.3rem;
+  font-weight: bold;
+  padding: 1rem;
+  cursor: pointer;
+  border-radius: 1rem;
+}
+
+header,
+footer {
+  background-color: #0d0d0d;
+  color: rgb(243, 219, 184);
+  width: 100%;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.div-logo {
+  margin-left: 2rem;
+  font-weight: bold;
+}
+
+.logo,
+.header-nav ul li a {
+  text-decoration: none;
+  font-size: 3rem;
+  color: inherit; /*color hereado*/
+  display: inline-block; /* Se alinean en línea (uno al lado del otro) pero mantienen propiedades de bloque */
+  align-items: center;
+  padding: 1.5rem;
+}
+
+.header-nav ul,
+footer .footer-list {
+  list-style: none /*se vayan las viñetas*/;
+  display: flex; /*lis li en fila*/
+  gap: 1rem; /*separar entre los hijos*/
+}
+
+.header-nav ul li a:hover {
+  /*el efecto al pasar el mouse (:hover)*/
+  opacity: 0.7; /*que se pongan un poco mas oscuros cundole pasas por arriba*/
+}
+
+.header-nav i {
+  color: rgb(243, 219, 184);
+}
+
+.footer-list li {
+  padding: 1rem;
+  padding-right: 1.5rem;
+}
+
+h1 {
+  font-size: 3.5rem; /*tamaño*/
+  font-weight: 800; /*grosor*/
+  line-height: 1.15; /*interlineado*/
+  margin: 3rem auto 1rem auto;
+  text-align: center;
+  margin-top: 5rem;
+  max-width: 700px;
+}
+
+h2 {
+  font-size: 2rem;
+  font-weight: 700;
+  line-height: 1.2;
+  text-align: center;
+  margin: 2rem 0; /* 3 arriba y abajo, 0 en los costados*/
+}
+
+.footer-list img {
+  width: 5rem;
+  padding: 0.5rem;
+  transition: transform 0.2s;
+}
+
+.footer-list img:hover {
+  transform: scale(1.1);
+}
+
+.text-footer {
+  padding-left: 2rem;
+}
+
+.color-subtitulo {
+  color: #f8ecd3;
+}
+
+/* -------------------------------------------------------------------------- */
+/*                                    HOME                                    */
+/* -------------------------------------------------------------------------- */
+.parrafo {
+  width: 80%;
+  text-align: center;
+  font-size: 1.7rem;
+  padding: 2rem;
+}
+
+.contenedor-tarjetas {
+  margin-top: 2rem;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap; /* si no entra en fila , se va para bajo*/
+  gap: 2rem; /*separacion entre tarjetas */
+}
+
+.card {
+  background-color: #eff0e2;
+  color: #2e2d2d;
+  width: 25rem;
+  padding-bottom: 2rem; /*espacio abajo en la caja*/
+
+  border-radius: 1rem; /*borde redondeado*/
+  overflow: hidden; /*oculta lo que se sale del contenedor, la img no se sale y se adapta a los bordes redondeados de la caja*/
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  /*padding: 0.5rem; /*DUDOSO*/
+
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15); /*sombra al elemento*/
+  /* 0: desplazamiento horizontal (no se mueve a la derecha/izquierda).
+    10px: desplazamiento vertical (la sombra baja 10px).
+    30px: desenfoque (qué tan difusa es la sombra).
+    rgba(0,0,0,0.15): color negro con 15% de opacidad.*/
+  transition: /*define como se animan los cambios*/
+    transform 0.2s,
+    box-shadow 0.2s;
+  /*en conjunto con el hover, se suaviza la transicion de cambio en las sombras*/
+}
+
+.card:hover {
+  transform: translateY(
+    -5px
+  ); /*se eleva un poquito, parece quela estas seleccionando*/
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3); /*sombra mas intensa*/
+}
+
+.card img {
+  width: 100%; /*que tome el 100% de la caja, sino se desborda la imagen*/
+  height: 40rem; /*limitamos la altura, para que todas tengan la misma*/
+  object-fit: cover; /*que se adapte a cubrir todo*/
+}
+
+/* -------------------------------------------------------------------------- */
+/*                                  CONTACTO                                  */
+/* -------------------------------------------------------------------------- */
+.titulo-contato {
+  margin: 2rem 0;
+}
+
+.form-contacto {
+  background-color: #5c9191;
+  color: #2e2d2d;
+  width: 100%;
+  max-width: 50rem; /*le damos un tamaño maximo a la caja. xq sino se estira mucho en pantalla grande*/
+  font-size: 2rem;
+  padding: 2rem;
+  border-radius: 1rem;
+
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15); /* sombre a la caja */
+  /* hay paginas de sombras, buscar, copiar y pegar la que te guste*/
+}
+
+.form-contacto input,
+.form-contacto textarea {
+  width: 100%;
+  padding: 0.5rem;
+  margin-top: 0.5rem;
+  margin-bottom: 1.5rem;
+
+  border-radius: 0.8rem;
+  border: 1px solid #ccc;
+
+  font-family: inherit;
+}
+
+.form-contacto input:focus,
+.form-contacto textarea:focus {
+  /*focus: se activa cuando lo seleccionas, haces click*/
+  outline: 2px solid #77777e; /*contorno*/
+  border-color: transparent;
+}
+
+/* -------------------------------------------------------------------------- */
+/*                                MEDIA QUERIES                               */
+/* -------------------------------------------------------------------------- */
+@media (max-width: 600px) {
+  /*que cuando llegue al tam 600px ,celular, las cosas del header y el footer tengan disposion flex,
+  que se pongan en columna, sino se descuartiza todo*/
+  header,
+  footer {
+    flex-direction: column;
+  }
+}

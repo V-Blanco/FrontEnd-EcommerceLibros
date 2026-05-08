@@ -1,0 +1,84 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=<device-width>, initial-scale=1.0" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Saira+Condensed:wght@100;200;300;400;500;600;700;800;900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+    />
+
+    <link rel="stylesheet" href="../css/styless.css" />
+    <title>Document</title>
+  </head>
+  <body>
+    <header>
+      <div class="div-logo">
+        <a class="logo" href="../index.html">BOOK!S</a>
+      </div>
+      <nav class="header-nav">
+        <ul>
+          <li>
+            <a href="../index.html">Inicio</a>
+          </li>
+          <li>
+            <a href="./contacto.html">Contacto</a>
+          </li>
+          <li>
+            <a href="../index.html">
+              <i class="fa-solid fa-cart-shopping"></i>
+            </a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+    <main>
+      <h1 class="titulo-contacto color-subtitulo">Contactenos</h1>
+      <form
+        class="form-contacto"
+        action="https://formspree.io/f/mlgolzzq"
+        method="POST"
+      >
+        <div class="grupo-input">
+          <!--agregamos div aca para l flex, para relacion padre-hijo-->
+          <label>
+            Your email:
+            <input type="email" name="email" />
+          </label>
+        </div>
+        <div class="grupo-input">
+          <label>
+            Your message:
+            <textarea name="message"></textarea>
+          </label>
+        </div>
+        <!-- your other form fields go here -->
+        <button class="btn" type="submit">Send</button>
+      </form>
+    </main>
+    <footer>
+      <p class="text-footer">Visitanos en nuestras redes sociales</p>
+      <nav>
+        <ul class="footer-list">
+          <li>
+            <a href="https://web.whatsapp.com" target="_blank">
+              <img src="../img/whatsapp.png" alt="logo whatsapp" />
+            </a>
+          </li>
+          <li>
+            <a href="https://www.instagram.com" target="_blank">
+              <img src="../img/social.png" alt="logo instagram" />
+            </a>
+          </li>
+        </ul>
+      </nav>
+    </footer>
+  </body>
+</html>
