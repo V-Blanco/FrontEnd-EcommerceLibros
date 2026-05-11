@@ -125,13 +125,6 @@ h2 {
 /* -------------------------------------------------------------------------- */
 /*                                    HOME                                    */
 /* -------------------------------------------------------------------------- */
-.parrafo {
-  width: 80%;
-  text-align: center;
-  font-size: 1.7rem;
-  padding: 2rem;
-}
-
 .contenedor-tarjetas {
   margin-top: 2rem;
   display: flex;
