@@ -51,6 +51,7 @@ footer {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  padding-right: 1rem;
 }
 
 .div-logo {
@@ -82,6 +83,14 @@ footer .footer-list {
 
 .header-nav i {
   color: rgb(243, 219, 184);
+}
+
+.contador-carrito {
+  top: 0; /*lo pegua al borde superior,  borde superior debe estar alineado con el borde superior de su contenedor  */
+  right: 1rem; /*lo posiciona respecto al borde derecho del contenedor*/
+  position: absolute; /*Permite usar coordenadas absolutas,se coloca exactamente en la posición indicada, independiente del resto del contenido.*/
+  font-size: 2.2rem;
+  font-weight: bold;
 }
 
 .footer-list li {
@@ -128,13 +137,6 @@ h2 {
 /* -------------------------------------------------------------------------- */
 /*                                    HOME                                    */
 /* -------------------------------------------------------------------------- */
-.parrafo {
-  width: 80%;
-  text-align: center;
-  font-size: 1.7rem;
-  padding: 2rem;
-}
-
 .contenedor-tarjetas {
   margin-top: 2rem;
   display: flex;
@@ -156,7 +158,6 @@ h2 {
   flex-direction: column;
   align-items: center;
   text-align: center;
-  /*padding: 0.5rem; /*DUDOSO*/
 
   box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15); /*sombra al elemento*/
   /* 0: desplazamiento horizontal (no se mueve a la derecha/izquierda).
@@ -220,6 +221,46 @@ h2 {
   /*focus: se activa cuando lo seleccionas, haces click*/
   outline: 2px solid #77777e; /*contorno*/
   border-color: transparent;
+}
+
+/* -------------------------------------------------------------------------- */
+/*                                   CARRITO                                  */
+/* -------------------------------------------------------------------------- */
+
+.acciones-carrito {
+  display: flex;
+  flex-direction: column; /* total arriba, botón abajo */
+  align-items: center; /* centra horizontalmente */
+  gap: 1.5rem; /* espacio entre total y botón */
+  margin-top: 2rem;
+}
+
+.mensaje-carrito-vacio {
+  font-size: 2.5rem;
+  text-align: center;
+  margin-top: 2rem;
+}
+
+.btn-vaciar-carrito {
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.15);
+  font-size: 1.5rem;
+  background-color: rgba(245, 156, 83, 0.986);
+}
+.btn-vaciar-carrito:hover {
+  background: #e29f3a; /* tono más oscuro al pasar el mouse */
+  transform: scale(1.02); /* efecto de “agrandarse” */
+}
+
+.total-carrito {
+  text-align: center;
+  margin: 1rem;
+  color: black;
+  background-color: #c0a885;
+  border-radius: 1rem;
+  padding: 1rem 1.5rem;
+  font-weight: bold;
+  font-size: 2rem;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.15);
 }
 
 /* -------------------------------------------------------------------------- */

@@ -1,0 +1,72 @@
+[
+  {
+    "id": "1",
+    "titulo": "Mistborn",
+    "subtitulo": "Nacidos de la bruma: El Imperio final",
+    "img": "img/Mistborn.jpg",
+    "precio": 20000
+  },
+  {
+    "id": "2",
+    "titulo": "Dune",
+    "subtitulo": "Dune: Parte I",
+    "img": "img/Dune.jpg",
+    "precio": 15000
+  },
+  {
+    "id": "3",
+    "titulo": "Juego de Tronos",
+    "subtitulo": "Cancion de fuego y hielo: Juego de tronos",
+    "img": "img/GoT.GIF",
+    "precio": 25000
+  },
+  {
+    "id": "4",
+    "titulo": "Amanecer Rojo",
+    "subtitulo": "Amanecer Rojo",
+    "img": "img/Amanecer Rojo.webp",
+    "precio": 15000
+  },
+  {
+    "id": "5",
+    "titulo": "1984",
+    "subtitulo": "1984 George Orwell",
+    "img": "img/1984.jpg",
+    "precio": 10000
+  },
+  {
+    "id": "6",
+    "titulo": "El camino de los Reyes",
+    "subtitulo": "El archivo de las Tormentas I",
+    "img": "img/CaminoDeReyes.jpg",
+    "precio": 25000
+  },
+  {
+    "id": "7",
+    "titulo": "Proyecto Hail Mary",
+    "subtitulo": "Proyecto Hail Mary",
+    "img": "img/HailMary.jpg",
+    "precio": 10000
+  },
+  {
+    "id": "8",
+    "titulo": "El señor de los Anillos",
+    "subtitulo": "El señor de los Anilos I: La Comunidad del Anillo",
+    "img": "img/ElSeñorDeLosAnillos.jpg",
+    "precio": 20000
+  },
+  {
+    "id": "9",
+    "titulo": "Sherlock Holmes",
+    "subtitulo": "Las aventuras de Sherlock Holmes",
+    "img": "img/Sherlock.jpg",
+    "precio": 15000
+  },
+  {
+    "id": "10",
+    "titulo": "Seis de Cuervos",
+    "subtitulo": "Seis de Cuervos I",
+    "img": "img/SeisDeCuervos.jpg",
+    "precio": 10000
+  }
+]
