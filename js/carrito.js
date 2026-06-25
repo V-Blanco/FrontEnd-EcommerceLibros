@@ -37,7 +37,7 @@ const renderizarCarrito = () => {
     precio.textContent = `$${producto.precio}`;
 
     const btnEliminar = document.createElement("button");
-    btnEliminar.classList.add("btn", "btn-eliminar-carrito");
+    btnEliminar.classList.add("btn");
     btnEliminar.textContent = "Eliminar producto";
 
     btnEliminar.addEventListener("click", () => {
