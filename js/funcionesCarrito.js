@@ -36,5 +36,13 @@ export const actualizarContadorCarrito = (carrito) => {
 };
 
 export const mostrarMensaje = (mensaje) => {
-  alert(mensaje);
+  Swal.fire({
+    title: "Aviso",
+    text: mensaje,
+    icon: "success",
+    confirmButtonText: "OK",
+
+    heightAuto: false, //evita que el modal altere la altura del documento. que no se suba el fotter durante el aviso
+    scrollbarPadding: false, // evita que se agregue espacio extra cuando se oculta la barra de scroll.
+  });
 };

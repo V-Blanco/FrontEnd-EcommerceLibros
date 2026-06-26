@@ -1,7 +1,8 @@
-import { obtenerCarritoStorage, vaciarCarritoStorage } from "./storage.js";
+import { obtenerCarritoStorage } from "./storage.js";
 import {
   eliminarProducto,
   actualizarContadorCarrito,
+  vaciarCarrito,
 } from "./funcionesCarrito.js";
 
 const renderizarCarrito = () => {
@@ -11,7 +12,8 @@ const renderizarCarrito = () => {
   const contenedorCarrito = document.getElementById("contenedor-carrito");
   const divAcciones = document.getElementById("acciones-carrito"); //botones
 
-  contenedorCarrito.innerHTML = ""; //limpiar el contenedor
+  //para resetear el carrito cada vez que se borre un producto, limpiar el contenedor
+  contenedorCarrito.innerHTML = "";
   divAcciones.innerHTML = "";
 
   if (!carrito.length) {
@@ -66,7 +68,7 @@ const renderizarCarrito = () => {
   btnVaciar.classList.add("btn", "btn-vaciar-carrito");
   btnVaciar.textContent = "Vaciar carrito";
   btnVaciar.addEventListener("click", () => {
-    vaciarCarritoStorage();
+    vaciarCarrito();
     renderizarCarrito();
   });
   divAcciones.appendChild(btnVaciar);
